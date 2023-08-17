@@ -128,7 +128,13 @@ function dispalyGreetings(today){
         var year = today.getFullYear();
         document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
 
-    }
+        if(today.getHours() >=12){
+            seconds+=" pm"
+        }
+        else{
+            seconds+=" am"
+        }
+
 
 
     function dispalyClock(today) {
